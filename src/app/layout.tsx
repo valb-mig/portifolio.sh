@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={rubki.className}>
-        <div className="bg-default">
+        <div className="bg-default overflow-hidden">
           { children }
         </div>
       </body>

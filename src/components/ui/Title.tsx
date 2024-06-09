@@ -12,7 +12,7 @@ interface TitleProps {
 
 const Title = ({ children }: TitleProps) => {
   return (
-    <h2 className="flex items-center gap-2 text-5xl py-2 w-full overflow-hidden">
+    <h2 className="flex items-center gap-2 text-3xl sm:text-5xl py-2 w-full overflow-hidden">
         <div className="flex items-center text-foreground-1">
             <Hash size={40} className="text-shade-1"/>
             { children }

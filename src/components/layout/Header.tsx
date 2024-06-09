@@ -15,19 +15,28 @@ const Header = () => {
             <header className="flex justify-between items-center h-10">
                     
                 <div className="flex items-center gap-2">
-                    <Badge title="./portifolio.sh">
+                    <Badge title="./portifolio.sh" titleClass="hidden sm:block">
                         <Terminal />
                     </Badge>
                 </div>
 
                 <div className="flex gap-2 text-sm">
-                    <a className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" href="#projects">
-                        Projetos
-                    </a>
-                    <a className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" href="#projects">
+                    <a 
+                        className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" 
+                        href="#technologies"
+                    >
                         Tecnologias
                     </a>
-                    <a className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" href="#projects">
+                    <a 
+                        className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" 
+                        href="#projects"
+                    >
+                        Projetos
+                    </a>
+                    <a 
+                        className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" 
+                        href="#projects"
+                    >
                         Contato
                     </a>
                 </div>
