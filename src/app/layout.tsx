@@ -7,6 +7,11 @@ const rubki = Rubik({ weight: "400", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Ivalber Miguel - Portifólio",
   description: "Portifólio de Ivalber Miguel",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

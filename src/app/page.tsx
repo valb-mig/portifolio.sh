@@ -30,6 +30,7 @@ const App = () => {
 
   return (
     <>
+
       <div className="flex justify-center bg-emerald-500 font-bold text-emerald-800 text-sm">
         Trabalhando atualmente no&nbsp;
         <a className="flex items-center text-emerald-950 underline" href={config.actual.url} target="_blank" rel="noreferrer">
@@ -41,9 +42,8 @@ const App = () => {
       <Header/>
 
       <main className="flex flex-col text-foreground-2">
-
-        <Section key="start">
-
+        
+        <Section>
           <div className="flex gap-2 flex-col items-center w-1/2">
             <h1 className="text-4xl lg:text-7xl text-center">
               Olá, eu sou <span className="font-bold text-primary">{config.name}</span>.
@@ -58,12 +58,12 @@ const App = () => {
             </h1>
 
             <button 
-                className="flex gap-2 w-fit items-center border-2 border-primary bg-primary hover:bg-inherit hover:border-primary hover:text-primary rounded-lg p-1 px-2 text-2xl transition-all"
-                onClick={() => window.open("https://google.com", "_blank") }
-              >
-                <MailIcon/>
-                Me contate
-              </button>
+              className="flex gap-2 w-fit items-center border-2 border-primary bg-primary hover:bg-inherit hover:border-primary hover:text-primary rounded-lg p-1 px-2 text-2xl transition-all"
+              onClick={() => window.open("https://google.com", "_blank") }
+            >
+              <MailIcon/>
+              Me contate
+            </button>
           </div>
 
           <div className="w-1/2 pointer-events-none relative">
@@ -74,23 +74,23 @@ const App = () => {
           </div>
         </Section>
 
-        <Section key="projects">
-          <div>
+        <Section id="projects" className="flex-col">
             <Title>Projetos</Title>
-            <p className="text-sm text-foreground-5">
-              Aqui estão alguns dos projetos que desenvolvi
-            </p>
             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-
-              <CardLink 
-                title="React Lottie"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                distinctio alias voluptatum blanditiis laudantium." 
-                href="https://github.com/joaocarmo/react-lottie" 
-              />
-            
+              <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                { config.projects.map((project) => (
+                    <CardLink 
+                      key={project.name}
+                      title={project.name}
+                      description={project.description}
+                      href={project.url}
+                      languages={project.languages}
+                    />
+                  )) 
+                }
+              </div>
             </div>
-          </div>
+            <span className="absolute bg-primary/5 rounded-full w-[40rem] h-[40rem] block bottom-0 left-0 blur-3xl z-0" />
         </Section>
 
       </main>
