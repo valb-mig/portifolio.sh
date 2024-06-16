@@ -23,6 +23,12 @@ const Header = () => {
                 <div className="flex gap-2 text-sm">
                     <a 
                         className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" 
+                        href="#about"
+                    >
+                        Sobre
+                    </a>
+                    <a 
+                        className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" 
                         href="#technologies"
                     >
                         Tecnologias

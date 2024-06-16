@@ -40,6 +40,9 @@ const CardLink = ({ href, title, languages, description }: CardLinkProps) => {
                 </div>
             )}
         </div>
+        <div className="mt-4 flex justify-between">
+            <img src="https://via.placeholder.com/500x300" alt="imagem" className="rounded-lg" width="500px" height="300px"/>  
+        </div>
     </a>
   );
 }

@@ -27,9 +27,9 @@ const config = {
             languages: ["TypeScript", "JavaScript", "Tailwind CSS", "Next.js"],
         },
         {
-            name: "laravel.mercado-barato",
-            description: "📚 O 'Mercado Barato' é um sistema de gerenciamento de produtos e estoque de um supermercado fictício!",
-            url: "https://github.com/valb-mig/laravel.mercado-barato",
+            name: "laravel.smart-storage",
+            description: "📦 O projeto Smart Storage tem como objetivo proporcionar um gerenciamento de inventário fácil, simples e rápido.",
+            url: "https://github.com/valb-mig/laravel.smart-storage",
             languages: ["Laravel", "PHP", "MySQL"],
         },
         {

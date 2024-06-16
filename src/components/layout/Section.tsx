@@ -14,7 +14,7 @@ interface SectionProps {
 
 const Section = ({ id, children, className }: SectionProps) => {
   return (
-    <section id={id} className={`flex w-full items-center relative py-4 px-2 ${ className }`}>
+    <section id={id} className={`flex w-full items-center relative px-2 ${ className }`}>
 
         <div className="absolute flex w-full justify-between z-30 top-0 text-shade-3">
             <span className="flex w-10 justify-between">

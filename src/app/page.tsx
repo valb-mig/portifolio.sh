@@ -46,7 +46,7 @@ const App = () => {
 
       <main className="flex flex-col text-foreground-2">
 
-        <Section id="about" className="flex-col sm:flex-row">
+        <Section className="flex-col sm:flex-row">
 
           <div className="sm:hidden block w-1/2 pointer-events-none relative">
             <div className="relative z-10">
@@ -55,34 +55,36 @@ const App = () => {
             <span className="absolute bg-primary/5 rounded-full size-full block top-0 blur-3xl" />
           </div>
 
-          <div className="flex gap-2 flex-col items-center w-full pb-4 sm:pb-0 sm:w-1/2">
+          <div className="flex gap-5 flex-col items-center w-full pb-4 sm:pb-0 sm:w-1/2">
             <h1 className="text-4xl lg:text-7xl text-center">
               Olá, eu sou <span className="font-bold text-primary">{userConfig.name}</span>.
 
-              <div className="text-sm sm:text-2xl lg:text-4xl">
+              <div className="text-sm sm:text-2xl lg:text-4xl text-foreground-4">
                 Seja bem-vindo(a) ao meu portifólio&nbsp;
                 <span className="relative">
                   digital 
-                  <div className="absolute text-4xl lg:text-8xl font-bold -right-3 -top-2 lg:-right-7 lg:-top-5 rotate-12 text-primary">!</div>
+                  <div className="absolute text-4xl lg:text-8xl font-bold -right-3 -top-2 lg:-right-7 lg:-top-5 rotate-12 text-emerald-500">!</div>
                 </span>
               </div>           
             </h1>
 
-            <div className="flex gap-2">
-              <button 
-                className="flex gap-2 w-fit items-center border-2 border-primary bg-primary hover:bg-inherit hover:border-primary hover:text-primary rounded-lg p-1 px-2 text-sm lg:text-2xl transition-all"
-                onClick={() => window.open("https://google.com", "_blank") }
-              >
-                <MailIcon/>
-                Me contate
-              </button>
+            <div className="flex gap-2">              
               <button 
                 className="flex gap-2 w-fit items-center border-2 bg-inherit hover:bg-primary border-primary text-primary hover:text-foreground-1 rounded-lg p-1 px-2 text-sm lg:text-2xl transition-all"
                 onClick={() => window.open("https://google.com", "_blank") }
               >
                 <Download/>
-                Currículo
+                Baixar CV
               </button>
+              <a 
+                href="mailto:valb-mig@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className="flex gap-2 w-fit items-center border-2 border-primary bg-primary hover:bg-inherit hover:border-primary hover:text-primary rounded-lg p-1 px-2 text-sm lg:text-2xl transition-all"
+              >
+                <MailIcon/>
+                Me contate
+              </a>
             </div>
           </div>
 
@@ -94,7 +96,27 @@ const App = () => {
           </div>
         </Section>
 
-        <Section id="technologies" className="flex-col gap-4">
+        <Section id="about" className="gap-2 w-full mx-auto max-w-screen-xl">
+            <div className="hidden sm:flex justify-center w-1/3">
+              <img src="/img/me.jpeg" alt="me" className="size-[10rem] lg:size-[20rem] rounded-full"/>
+            </div>
+            <article className="w-full sm:w-2/3">
+              <Title>Sobre</Title>
+              <div className="sm:hidden flex w-full justify-center items-center">
+                <img src="/img/me.jpeg" alt="me" className="size-[5rem] lg:size-[20rem] rounded-full"/>
+              </div>
+              <p className="texl-lg lg:text-2xl text-foreground-3">&quot;
+                Olá! 👋 Eu sou Ivalber Miguel, um desenvolvedor web com um ano de experiência, 
+                apaixonado por transformar código em soluções incríveis. 
+                Desde março de 2022, tenho me dedicado ao desenvolvimento web, 
+                trabalhando com PHP, CSS, HTML, JavaScript, ReactJS, Laravel, Next.js e SQL. 
+                Sempre buscando aprimorar minhas habilidades. 
+                Aos 20 anos, sou fluente em inglês e motivado pela paixão, pela programação e desafios tecnológicos. 
+                Confira meu progresso no meu GitHub! 🚀&quot;</p>
+            </article>
+        </Section>
+
+        <Section id="technologies" className="flex-col gap-12 py-20">
           
           <div className="flex items-center gap-2 text-sm sm:text-lg bg-shade-4 border-2 border-shade-3 px-4 py-1 rounded-full">
             <p>Linguagens</p>
@@ -104,7 +126,7 @@ const App = () => {
             <p>Frameworks</p>
           </div>
 
-          <div className="flex w-full gap-2 justify-around wrapper">
+          <div className="flex w-full gap-2 wrapper">
             { userConfig.technologies.map((technology, index) => (
                 <LanguageCard key={index} id={index} name={technology}/>
               )) 

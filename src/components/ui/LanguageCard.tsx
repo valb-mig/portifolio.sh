@@ -13,10 +13,10 @@ const TechCard = ({ name, id }: TechCardProps) => {
 
   return (
     <span 
-      className="flex p-2 rounded-lg items-center text-lg lg:text-4xl gap-2 text-foreground-3 pointer-events-none item"
+      className="flex w-full p-2 rounded-lg items-center text-lg lg:text-4xl gap-2 text-foreground-3 pointer-events-none item"
       style={{ animationDelay: delay}}
     >
-      <div className="size-10 lg:size-20 flex items-center justify-center">
+      <div className="min-w-10 min-h-10 size-10 lg:size-20 flex items-center justify-center">
         <TechIcon technology={name}/>
       </div> 
       { name }

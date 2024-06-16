@@ -20,10 +20,10 @@ const config: Config = {
         },
         foreground: {
           '1': '#F5F5F5',
-          '2': '#E5E5E5',
-          '3': '#D5D5D5',
-          '4': '#BBBBBB',
-          '5': '#8E8E8E'
+          '2': '#DAD9DC',
+          '3': '#CFCDD3',
+          '4': '#B9B4C0',
+          '5': '#A7A2B1'
         },
         'primary': '#5B24D3',
       },
