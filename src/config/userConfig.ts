@@ -29,7 +29,7 @@ const config = {
         {
             name: "laravel.smart-storage",
             description: "📦 O projeto Smart Storage tem como objetivo proporcionar um gerenciamento de inventário fácil, simples e rápido.",
-            url: "https://github.com/valb-mig/laravel.smart-storage",
+            url: "https://github.com/in-logic/laravel.smart-storage",
             languages: ["Laravel", "PHP", "MySQL"],
         },
         {
