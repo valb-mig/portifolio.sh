@@ -7,6 +7,7 @@ import Section from "layout/Section";
 import Title from "ui/Title";
 import CardLink from "ui/CardLink";
 import LanguageCard from "ui/LanguageCard";
+import Subtitle from "ui/Subtitle";
 
 import Loottie from "react-lottie";
 import lottieData from '#/assets/persona.json';
@@ -46,7 +47,7 @@ const App = () => {
 
       <main className="flex flex-col text-foreground-2">
 
-        <Section className="flex-col sm:flex-row">
+        <Section className="flex-col sm:flex-row mx-auto max-w-screen-xl">
 
           <div className="sm:hidden block w-1/2 pointer-events-none relative">
             <div className="relative z-10">
@@ -97,23 +98,38 @@ const App = () => {
         </Section>
 
         <Section id="about" className="gap-2 w-full mx-auto max-w-screen-xl">
-            <div className="hidden sm:flex justify-center w-1/3">
-              <img src="/img/me.jpeg" alt="me" className="size-[10rem] lg:size-[20rem] rounded-full"/>
+          <div className="hidden sm:flex justify-center w-1/3">
+            <img src="/img/me.jpeg" alt="me" className="size-[10rem] lg:size-[20rem] rounded-full"/>
+          </div>
+          <article className="w-full sm:w-2/3">
+            <Title>Sobre</Title>
+            <div className="sm:hidden flex w-full justify-center items-center">
+              <img src="/img/me.jpeg" alt="me" className="size-[5rem] lg:size-[20rem] rounded-full"/>
             </div>
-            <article className="w-full sm:w-2/3">
-              <Title>Sobre</Title>
-              <div className="sm:hidden flex w-full justify-center items-center">
-                <img src="/img/me.jpeg" alt="me" className="size-[5rem] lg:size-[20rem] rounded-full"/>
-              </div>
-              <p className="texl-lg lg:text-2xl text-foreground-3">&quot;
-                Olá! 👋 Eu sou Ivalber Miguel, um desenvolvedor web com um ano de experiência, 
-                apaixonado por transformar código em soluções incríveis. 
-                Desde março de 2022, tenho me dedicado ao desenvolvimento web, 
-                trabalhando com PHP, CSS, HTML, JavaScript, ReactJS, Laravel, Next.js e SQL. 
-                Sempre buscando aprimorar minhas habilidades. 
-                Aos 20 anos, sou fluente em inglês e motivado pela paixão, pela programação e desafios tecnológicos. 
-                Confira meu progresso no meu GitHub! 🚀&quot;</p>
-            </article>
+            <p className="texl-lg lg:text-2xl text-foreground-3">&quot;
+              Olá! 👋 Eu sou Ivalber Miguel, um desenvolvedor web com um ano de experiência, 
+              apaixonado por transformar código em soluções incríveis. 
+              Desde março de 2022, tenho me dedicado ao desenvolvimento web, 
+              trabalhando com PHP, CSS, HTML, JavaScript, ReactJS, Laravel, Next.js e SQL. 
+              Sempre buscando aprimorar minhas habilidades. 
+              Aos 20 anos, sou fluente em inglês e motivado pela paixão, pela programação e desafios tecnológicos. 
+              Confira meu progresso no meu GitHub! 🚀&quot;</p>
+          </article>
+        </Section>
+
+        <Section id="projects" className="flex-col py-20 mx-auto max-w-screen-xl">
+          <Title>Experiência</Title>
+          <div className="flex w-full gap-2">
+            <div className="flex flex-col justify-center w-1/2">
+              <Subtitle>Grupo ABRAZ</Subtitle>
+              <article className="w-full sm:w-2/3 texl-lg lg:text-2xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vitae non corporis distinctio explicabo vero eius soluta autem nesciunt natus eveniet perspiciatis corrupti quia, cupiditate, nostrum totam, deserunt blanditiis eos.
+              </article>
+            </div>
+            <div className="flex justify-center items-center w-1/2">
+              <img src="/img/logos/grupo-abraz.png" alt="me" className="size-[10rem] lg:size-[20rem] rounded-full"/>
+            </div>
+          </div>
         </Section>
 
         <Section id="technologies" className="flex-col gap-12 py-20">
@@ -145,6 +161,7 @@ const App = () => {
                       description={project.description}
                       href={project.url}
                       languages={project.languages}
+                      img={project.img}
                     />
                   )) 
                 }
