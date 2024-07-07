@@ -10,9 +10,10 @@ interface CardLinkProps {
     href?: string;
     languages?: string[];
     img?: string;
+    type?: string;
 }
 
-const CardLink = ({ img, href, title, languages, description }: CardLinkProps) => {
+const CardLink = ({ img, href, title, languages, description, type }: CardLinkProps) => {
   return (
     <a
         className="relative flex flex-col gap-4 justify-between h-full rounded-xl bg-shade-4 border border-shade-2 p-8 shadow-xl transition hover:border-primary hover:shadow-primary/10 z-10"
@@ -20,6 +21,10 @@ const CardLink = ({ img, href, title, languages, description }: CardLinkProps) =
         target="_blank"
         rel="noreferrer"
     >
+        <span className="absolute -top-2 -right-2 bg-emerald-500 px-2 text-lg rounded-full text-emerald-950 shadow-lg shadow-emerald-400/20">
+            {type}
+        </span>
+
         <div>
             <Github className="text-primary h-14 w-14 bg-shade-3 p-2 rounded-lg"/>
 

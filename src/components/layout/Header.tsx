@@ -26,8 +26,7 @@ const Header = () => {
                             { name: "Sobre", href: "#about" },
                             { name: "Experiência", href: "#experience" },
                             { name: "Tecnologias", href: "#technologies" },
-                            { name: "Projetos", href: "#projects" },
-                            { name: "Contato", href: "#contact" }
+                            { name: "Projetos", href: "#projects" }
                         ].map((item, index) => (
                             <a 
                                 key={index}

@@ -5,7 +5,7 @@ import "#/css/globals.css";
 const rubki = Rubik({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ivalber Miguel - Portifólio",
+  title: "Ivalber Miguel - Portifólio Digital",
   description: "Portifólio de Ivalber Miguel",
   icons: {
     icon: "/favicon.ico",
