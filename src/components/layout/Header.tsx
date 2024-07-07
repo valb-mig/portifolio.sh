@@ -21,30 +21,23 @@ const Header = () => {
                 </div>
 
                 <div className="flex gap-2 text-sm">
-                    <a 
-                        className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" 
-                        href="#about"
-                    >
-                        Sobre
-                    </a>
-                    <a 
-                        className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" 
-                        href="#technologies"
-                    >
-                        Tecnologias
-                    </a>
-                    <a 
-                        className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" 
-                        href="#projects"
-                    >
-                        Projetos
-                    </a>
-                    <a 
-                        className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all" 
-                        href="#projects"
-                    >
-                        Contato
-                    </a>
+                    {
+                        [
+                            { name: "Sobre", href: "#about" },
+                            { name: "Experiência", href: "#experience" },
+                            { name: "Tecnologias", href: "#technologies" },
+                            { name: "Projetos", href: "#projects" },
+                            { name: "Contato", href: "#contact" }
+                        ].map((item, index) => (
+                            <a 
+                                key={index}
+                                className="text-foreground-4 hover:text-foreground-1 p-1 px-2 rounded-lg transition-all hidden sm:block sm:text-xs lg:text-lg " 
+                                href={item.href}
+                            >
+                                {item.name}
+                            </a>
+                        ))
+                    }
                 </div>
 
                 <div className="flex gap-2">
