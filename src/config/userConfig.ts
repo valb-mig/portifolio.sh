@@ -52,9 +52,9 @@ const config = {
             // img: "https://github.com/valb-mig/todo-web-app/blob/main/repo/showcase.png?raw=true"
         },
         {
-            name: "laravel.testlab",
-            description: "",
-            url: "https://github.com/in-logic/laravel.testlab",
+            name: "self-study",
+            description: "🌟📚 A site that uses AI to create and administer exams, helping you to test your knowledge and improve your studies. 🎓🧠 ",
+            url: "https://github.com/lumus-team/self-study",
             languages: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
             type: "web",
             // img: "https://github.com/in-logic/laravel.testlab/blob/main/repo/showcase.png?raw=true"
