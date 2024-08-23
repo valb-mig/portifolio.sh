@@ -226,7 +226,6 @@ const App = () => {
                       href={project.url}
                       languages={project.languages}
                       type={project.type}
-                      img={project.img}
                     />
                   )) 
                 }
