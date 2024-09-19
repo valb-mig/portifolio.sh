@@ -18,9 +18,9 @@ import lottieData from '#/assets/persona.json';
 import { 
   ExternalLink,
   MailIcon,
-  Download,
   Dot,
-  Calendar
+  Calendar,
+  Eye
 } from "lucide-react";
 
 import userConfig from "@/config/userConfig";
@@ -93,13 +93,14 @@ const App = () => {
             </h1>
 
             <div className="flex gap-2">              
-              <button 
+              <a 
                 className="flex gap-2 w-fit items-center bg-inherit text-primary rounded-lg p-1 px-2 text-sm lg:text-2xl transition-all"
-                onClick={() => console.log("baixar")}
+                href="doc/ivalber-miguel.pdf"
+                target="_blank"
               >
-                <Download/>
-                Baixar CV
-              </button>
+                <Eye/>
+                Visualizar CV
+              </a>
               <a 
                 href="mailto:valb-mig@gmail.com"
                 target="_blank"
@@ -122,12 +123,12 @@ const App = () => {
 
         <Section id="about" className="gap-2 w-full mx-auto max-w-screen-xl mb-10">
           <div className="hidden sm:flex justify-center w-1/3">
-            <img src="https://github.com/valb-mig.png" alt="me" className="size-[10rem] lg:size-[20rem] rounded-full"/>
+            <img src="img/me.png" alt="me" className="size-[10rem] lg:size-[20rem] rounded-full"/>
           </div>
           <article className="w-full sm:w-2/3">
             <Title>Sobre</Title>
             <div className="sm:hidden flex w-full justify-center items-center">
-              <img src="https://github.com/valb-mig.png" alt="me" className="size-[5rem] lg:size-[20rem] rounded-full"/>
+              <img src="img/me.png" alt="me" className="size-[5rem] lg:size-[20rem] rounded-full"/>
             </div>
             <p className="text-xs text-justify lg:text-2xl text-foreground-3">
               &quot;Olá! 👋 Eu sou Ivalber Miguel, um desenvolvedor web com um ano de experiência, 
