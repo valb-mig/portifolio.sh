@@ -95,7 +95,7 @@ const App = () => {
             <div className="flex gap-2">              
               <a 
                 className="flex gap-2 w-fit items-center bg-inherit text-primary rounded-lg p-1 px-2 text-sm lg:text-2xl transition-all"
-                href="doc/ivalber-miguel.pdf"
+                href="doc/br/ivalber-miguel.pdf"
                 target="_blank"
               >
                 <Eye/>
@@ -133,7 +133,7 @@ const App = () => {
             <p className="text-xs text-justify lg:text-2xl text-foreground-3">
               &quot;Olá! 👋 Eu sou Ivalber Miguel, um desenvolvedor web com um ano de experiência, 
               apaixonado por transformar código em soluções incríveis. 
-              Desde março de 2022, tenho me dedicado ao desenvolvimento web, 
+              Desde março de 2021, tenho me dedicado ao desenvolvimento web, 
               trabalhando com&nbsp;
               <span className="text-emerald-500 font-bold">PHP</span>, 
               <span className="text-emerald-500 font-bold">CSS</span>, 
@@ -182,7 +182,7 @@ const App = () => {
                     </span>
                   </Subtitle>
                   <span className="flex gap-2 text-foreground-3 text-xs underline items-center">
-                    <Calendar className="size-4"/> desde 2023
+                    <Calendar className="size-4"/> desde Outubro de 2022
                   </span>
                 </div>
 
