@@ -95,7 +95,7 @@ const App = () => {
             <div className="flex gap-2">              
               <a 
                 className="flex gap-2 w-fit items-center bg-inherit text-primary rounded-lg p-1 px-2 text-sm lg:text-2xl transition-all"
-                href="doc/br/ivalber-miguel.pdf"
+                href={`doc/${lang}/ivalber-miguel.pdf`}
                 target="_blank"
               >
                 <Eye/>
