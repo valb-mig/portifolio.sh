@@ -157,7 +157,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="text-xs text-foreground-5">&copy; 2024. Ivalber Miguel. feito com ❤️ por <a href="https://github.com/valb-mig" className="text-emerald-500 underline" target="_blank">valb-mig</a></p>
+        <p className="text-xs text-foreground-5">&copy; 2024. Ivalber Souza. feito com ❤️ por <a href="https://github.com/valb-mig" className="text-emerald-500 underline" target="_blank">valb-mig</a></p>
       </div>
     </footer>
   );

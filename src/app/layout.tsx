@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import { JetBrains_Mono, Inter } from "next/font/google";
 import "#/css/globals.css";
 
-const rubki = Rubik({ weight: "400", subsets: ["latin"] });
+const jetbrains = JetBrains_Mono({ 
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-mono"
+});
+
+const inter = Inter({ 
+  weight: ["400", "500", "600"],
+  subsets: ["latin"],
+  variable: "--font-sans"
+});
 
 export const metadata: Metadata = {
-  title: "Ivalber Miguel - Portifólio Digital",
-  description: "Portifólio de Ivalber Miguel",
+  title: "Ivalber Souza — Backend Developer",
+  description: "Portfólio de Ivalber Souza — PHP Backend Developer, DDD, Clean Code, Docker.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -20,11 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
-      <body className={rubki.className}>
-        <div className="bg-default overflow-hidden">
-          { children }
-        </div>
+    <html lang="pt-br" className="dark">
+      <body className={`${jetbrains.variable} ${inter.variable} font-mono bg-zinc-950 text-zinc-100 antialiased`}>
+        {children}
       </body>
     </html>
   );
