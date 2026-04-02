@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import {
-  Terminal, Github, Linkedin, Instagram, MailIcon,
+  Terminal, Github, Linkedin, Instagram, MailIcon, Newspaper,
   Eye, ChevronRight,
   Code2,Globe,
   Calendar, MapPin, Award, BookOpen, ArrowUpRight
@@ -48,7 +48,7 @@ Embora meu foco seja o backend, quando o projeto exige, viro designer também. F
     proj_title: "projetos",
     proj_cmd: "git log --oneline projects/",
     proj_view: "ver no github",
-    footer_desc: "Portfólio construído com Next.js • Código aberto no GitHub.",
+    footer_desc: "Portfólio de Ivalber Souza",
     footer_copy: "© 2026 Ivalber Souza",
     edu_title: "education.log",
     edu_course: "Análise e Desenvolvimento de Sistemas",
@@ -93,7 +93,7 @@ Although my focus is backend, when the project demands it, I become a designer t
     proj_title: "projects",
     proj_cmd: "git log --oneline projects/",
     proj_view: "view on github",
-    footer_desc: "Portfolio built with Next.js • Open source on GitHub.",
+    footer_desc: "Portifolio of Ivalber Souza",
     footer_copy: "© 2026 Ivalber Souza",
     edu_title: "education.log",
     edu_course: "Systems Analysis and Development",
@@ -340,6 +340,14 @@ export default function App() {
             <a href="https://www.linkedin.com/in/valb-mig/" target="_blank" rel="noreferrer"
               className="text-zinc-400 hover:text-zinc-100 transition-colors p-1.5 hover:bg-zinc-800 rounded-lg">
               <Linkedin className="w-4 h-4" />
+            </a>
+            <a href="https://www.instagram.com/dev.valb/" target="_blank" rel="noreferrer"
+              className="text-zinc-400 hover:text-zinc-100 transition-colors p-1.5 hover:bg-zinc-800 rounded-lg">
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a href="https://valbblog.vercel.app/" target="_blank" rel="noreferrer"
+              className="text-zinc-400 hover:text-zinc-100 transition-colors p-1.5 hover:bg-zinc-800 rounded-lg">
+              <Newspaper className="w-4 h-4" />
             </a>
           </div>
         </div>
@@ -713,6 +721,7 @@ export default function App() {
                 { icon: Linkedin,  href: "https://www.linkedin.com/in/valb-mig/",      label: "LinkedIn"  },
                 { icon: Instagram, href: "https://www.instagram.com/valb.mig/",        label: "Instagram" },
                 { icon: MailIcon,  href: "mailto:valb-mig@gmail.com",                  label: "Email"     },
+                { icon: Newspaper, href: "https://valbblog.vercel.app/",               label: "Blog"      },
               ].map(({ icon: Icon, href, label }) => (
                 <a key={label} href={href} target="_blank" rel="noreferrer"
                   className="text-zinc-500 hover:text-zinc-200 transition-colors p-2 hover:bg-zinc-800 rounded-lg">
@@ -723,9 +732,6 @@ export default function App() {
           </div>
           <div className="mt-8 pt-6 border-t border-zinc-800/50 flex items-center justify-between">
             <p className="font-mono text-xs text-zinc-600">{text.footer_copy}</p>
-            <p className="font-mono text-xs text-zinc-700">
-              made with <span className="text-red-500/70">❤</span> + <span className="text-emerald-500/70">PHP</span>
-            </p>
           </div>
         </div>
       </footer>
