@@ -340,7 +340,7 @@ export default function Servicos() {
               <div className="space-y-2">
                 {[
                   { icon: Check, text: "Entrega no prazo combinado"     },
-                  { icon: Check, text: "Escopo fechado, sem surpresas"  },
+                  { icon: Check, text: "Transparência no processo"     },
                   { icon: Clock, text: "Resposta em até 24h"             },
                 ].map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-center gap-2 text-xs text-zinc-400">
