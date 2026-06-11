@@ -382,7 +382,7 @@ export default function App() {
               {text.hero_subtitle}
             </p>
 
-            <div className="flex items-center gap-3 pt-2">
+            <div className="flex flex-wrap items-center gap-3 pt-2">
               <a
                 href={`doc/${lang}/ivalber-souza.pdf`}
                 target="_blank"
@@ -399,13 +399,15 @@ export default function App() {
                 <MailIcon className="w-4 h-4" />
                 {text.hero_contact}
               </a>
-              <a
-                href="/servicos"
-                className="flex items-center gap-2 font-mono text-sm border border-emerald-500/40 bg-emerald-400/5 text-emerald-400 hover:bg-emerald-400/10 px-4 py-2 rounded-lg transition-all"
-              >
-                <ExternalLink className="w-4 h-4" />
-                catálogo
-              </a>
+              {lang === "pt" && (
+                <a
+                  href="/servicos"
+                  className="flex items-center gap-2 font-mono text-sm border border-emerald-500/40 bg-emerald-400/5 text-emerald-400 hover:bg-emerald-400/10 px-4 py-2 rounded-lg transition-all"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  catálogo
+                </a>
+              )}
             </div>
           </div>
 
